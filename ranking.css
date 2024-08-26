@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.bar{
+    background-color: transparent;
+    height: 14%;
+    width: auto;
+    margin: auto;
+    margin-bottom: 1.25%;
+}
+.logo img{
+    min-width: 23%;
+    margin-top: 2.25%;
+    margin-left: 3.0%;
+    float: left;
+    cursor: pointer;
+}
+.menu{
+    width: auto;
+    height: auto; 
+    margin: auto;
+    background-color: transparent; 
+    
+}
+ul{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 43px;
+    font-size: 18px;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover{
+    color: #d10101;
+}
+ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #d10101;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+    background: #d10101;
+}
+.user{
+    font-size: 60px;
+    cursor: pointer;
+    margin: auto;
+    float: right;
+    margin-right: 40px;
+    margin-top: 25px;
+    background: transparent;
+}
+.user .bx{
+    color: black;
+}
+
+.active {
+    border-bottom: 3px solid #d10101;
+    color: #d10101;
+    padding-bottom: 7px;
+}
+
+.head {
+    background-color: #060667;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5%;
+}
+
+.header {
+    color: white;
+    font-size: 45px; 
+    margin-left: 10px;
+}
+
+.ICC {
+    min-width: 40px;
+    height: auto; 
+}
+
+.A1 {
+    height: auto;
+    width: auto;
+    margin-left: 180px;
+}
+
+.A {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.rankings {
+    margin-left: 40px;
+    color: #000079;
+    padding-top: 30px;
+    font-size: 45px;
+}
+
+.B {
+    height: 45px;
+    width: 210px;
+    border-radius: 30px;
+    border: 2px solid #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    margin-left: 160px;
+}
+
+.A a {
+    text-decoration: none;
+}
+
+.A h3 {
+    color: #000079;
+}
+
+.team-rank-men {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+
+.Test,
+.ODI,
+.T20 {
+    margin: 20px;
+    margin-bottom: 90px;
+}
+
+.Test h3,
+.ODI h3,
+.T20 h3 {
+    font-size: 25px;
+}
+
+.test-rank,
+.odi-rank,
+.t20-rank {
+    border-collapse: collapse;
+    min-width: 425px;
+}
+
+.test-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.test-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.odi-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.odi-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.t20-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.t20-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.odi-rank-W th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.odi-rank-W th:last-child {
+    border-radius: 0 10px 0 0;
+}
+.t20-rank-W th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.t20-rank-W th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.test-rank th,
+.test-rank td,
+.odi-rank th,
+.odi-rank td,
+.t20-rank th,
+.t20-rank td {
+    padding: 12px 15px;
+}
+
+.test-rank tbody tr:nth-child(1),
+.odi-rank tbody tr:nth-child(1),
+.t20-rank tbody tr:nth-child(1) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+tr:nth-child(odd) { 
+    background-color: #e7e7e7; 
+}
+
+.test-rank tbody tr,
+.odi-rank tbody tr,
+.t20-rank tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.test-rank thead tr,
+.test-batter-rank thead tr,
+.test-bowler-rank thead tr,
+.test-all-rounder-rank thead tr {
+    text-align: left;
+    border-bottom: 3px solid #1aff05
+}
+
+.odi-rank thead tr,
+.odi-rank-W thead tr,
+.odi-batter-rank thead tr,
+.odi-bowler-rank thead tr,
+.odi-all-rounder-rank thead tr,
+.odi-batter-rank-W thead tr,
+.odi-bowler-rank-W thead tr,
+.odi-all-rounder-rank-W thead tr {
+    text-align: left;
+    border-bottom: 3px solid #05c1ff
+}
+
+.t20-rank thead tr,
+.t20-rank-W thead tr,
+.t20-batter-rank thead tr,
+.t20-bowler-rank thead tr,
+.t20-all-rounder-rank thead tr,
+.t20-batter-rank-W thead tr,
+.t20-bowler-rank-W thead tr,
+.t20-all-rounder-rank-W thead tr {
+    text-align: left;
+    border-bottom: 3px solid #ff05c9
+}
+
+.team-rank-W {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+
+.ODI-W,
+.T20-W {
+    margin: 20px;
+    margin-bottom: 90px;
+}
+
+.ODI-W h3,
+.T20-W h3 {
+    font-size: 25px;
+}
+
+.odi-rank-W,
+.t20-rank-W {
+    border-collapse: collapse;
+    min-width: 425px;
+}
+
+.odi-rank-W th,
+.odi-rank-W td,
+.t20-rank-W th,
+.t20-rank-W td {
+    padding: 12px 15px;
+}
+
+.odi-rank-W tbody tr:nth-child(1),
+.t20-rank-W tbody tr:nth-child(1) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.odi-rank-W tbody tr,
+.t20-rank-W tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.Test-batter,
+.ODI-batter,
+.T20-batter {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.Test-batter h3,
+.ODI-batter h3,
+.T20-batter h3 {
+    font-size: 25px;
+}
+
+.test-batter-rank,
+.odi-batter-rank,
+.t20-batter-rank {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.test-batter-rank th:first-child,
+.odi-batter-rank th:first-child,
+.t20-batter-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.test-batter-rank th:last-child,
+.odi-batter-rank th:last-child,
+.t20-batter-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.test-batter-rank th,
+.test-batter-rank td,
+.odi-batter-rank th,
+.odi-batter-rank td,
+.t20-batter-rank th,
+.t20-batter-rank td{
+    padding: 12px 15px;
+}
+
+.test-batter-rank tbody tr:nth-child(2),
+.odi-batter-rank tbody tr:nth-child(2),
+.t20-batter-rank tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.test-batter-rank tbody tr,
+.odi-batter-rank tbody tr,
+.t20-batter-rank tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.Virat-Kohli-Test,
+.Virat-Kohli-ODI,
+.Virat-Kohli-T20 {
+    min-width: 920px; 
+    height: 500px;
+}
+
+.Test-bowler,
+.ODI-bowler,
+.T20-bowler {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.Test-bowler h3,
+.ODI-bowler h3,
+.T20-bowler h3 {
+    font-size: 25px;
+}
+
+.test-bowler-rank,
+.odi-bowler-rank,
+.t20-bowler-rank {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.test-bowler-rank th:first-child,
+.odi-bowler-rank th:first-child,
+.t20-bowler-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.test-bowler-rank th:last-child,
+.odi-bowler-rank th:last-child,
+.t20-bowler-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.test-bowler-rank th,
+.test-bowler-rank td,
+.odi-bowler-rank th,
+.odi-bowler-rank td,
+.t20-bowler-rank th,
+.t20-bowler-rank td{
+    padding: 12px 15px;
+}
+
+.test-bowler-rank tbody tr:nth-child(2),
+.odi-bowler-rank tbody tr:nth-child(2),
+.t20-bowler-rank tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.test-bowler-rank tbody tr,
+.odi-bowler-rank tbody tr,
+.t20-bowler-rank tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.Test-all-rounder,
+.ODI-all-rounder,
+.T20-all-rounder {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.Test-all-rounder h3,
+.ODI-all-rounder h3,
+.T20-all-rounder h3 {
+    font-size: 25px;
+}
+
+.test-all-rounder-rank,
+.odi-all-rounder-rank,
+.t20-all-rounder-rank {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.test-all-rounder-rank th:first-child,
+.odi-all-rounder-rank th:first-child,
+.t20-all-rounder-rank th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.test-all-rounder-rank th:last-child,
+.odi-all-rounder-rank th:last-child,
+.t20-all-rounder-rank th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.test-all-rounder-rank th,
+.test-all-rounder-rank td,
+.odi-all-rounder-rank th,
+.odi-all-rounder-rank td,
+.t20-all-rounder-rank th,
+.t20-all-rounder-rank td{
+    padding: 12px 15px;
+}
+
+.test-all-rounder-rank tbody tr:nth-child(2),
+.odi-all-rounder-rank tbody tr:nth-child(2),
+.t20-all-rounder-rank tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.test-all-rounder-rank tbody tr,
+.odi-all-rounder-rank tbody tr,
+.t20-all-rounder-rank tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.ODI-batter-W,
+.T20-batter-W {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.ODI-batter-W h3,
+.T20-batter-W h3 {
+    font-size: 25px;
+}
+
+.odi-batter-rank-W,
+.t20-batter-rank-W {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.odi-batter-rank-W th:first-child,
+.t20-batter-rank-W th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.odi-batter-rank-W th:last-child,
+.t20-batter-rank-W th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.odi-batter-rank-W th,
+.odi-batter-rank-W td,
+.t20-batter-rank-W th,
+.t20-batter-rank-W td{
+    padding: 12px 15px;
+}
+
+.odi-batter-rank-W tbody tr:nth-child(2),
+.t20-batter-rank-W tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.odi-batter-rank-W tbody tr,
+.t20-batter-rank-W tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.ODI-bowler-W,
+.T20-bowler-W {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.ODI-bowler-W h3,
+.T20-bowler-W h3 {
+    font-size: 25px;
+}
+
+.odi-bowler-rank-W,
+.t20-bowler-rank-W {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.odi-bowler-rank-W th:first-child,
+.t20-bowler-rank-W th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.odi-bowler-rank-W th:last-child,
+.t20-bowler-rank-W th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.odi-bowler-rank-W th,
+.odi-bowler-rank-W td,
+.t20-bowler-rank-W th,
+.t20-bowler-rank-W td{
+    padding: 12px 15px;
+}
+
+.odi-bowler-rank-W tbody tr:nth-child(2),
+.t20-bowler-rank-W tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.odi-bowler-rank-W tbody tr,
+.t20-bowler-rank-W tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.ODI-all-rounder-W,
+.T20-all-rounder-W {
+    margin: 40px;
+    margin-bottom: 90px;
+}
+
+.ODI-all-rounder-W h3,
+.T20-all-rounder-W h3 {
+    font-size: 25px;
+}
+
+.odi-all-rounder-rank-W,
+.t20-all-rounder-rank-W {
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.odi-all-rounder-rank-W th:first-child,
+.t20-all-rounder-rank-W th:first-child {
+    border-radius: 10px 0 0 0;
+}
+.odi-all-rounder-rank-W th:last-child,
+.t20-all-rounder-rank-W th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.odi-all-rounder-rank-W th,
+.odi-all-rounder-rank-W td,
+.t20-all-rounder-rank-W th,
+.t20-all-rounder-rank-W td{
+    padding: 12px 15px;
+}
+
+.odi-all-rounder-rank-W tbody tr:nth-child(2),
+.t20-all-rounder-rank-W tbody tr:nth-child(2) {
+    height: 100px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.odi-all-rounder-rank-W tbody tr,
+.t20-all-rounder-rank-W tbody tr {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+img {
+    max-width: 25px;
+}
+
+.rank-change {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -8px;
+    transform: scale(1.2);
+}
+
+.no-change {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5px;
+    width: 21px;
+}
+
+.KING{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -6px;
+} 
+
+.icons {
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    min-width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.name {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5px solid #8e8e8e;
+}
+
+.copyright {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -45px;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    min-width: 12%;
+    margin: 40px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}

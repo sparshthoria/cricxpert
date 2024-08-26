@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rank.xsl"?>
+<cricketRankings>
+    <mensTestbatter>
+        <country name="India">
+            <player>
+                <rank>1</rank>
+                <name>Virat KOHLI</name>
+                <rating>923</rating>
+            </player>
+        </country>
+        <country name="Australia">
+            <player>
+                <rank>3</rank>
+                <name>Steve SMITH</name>
+                <rating>818</rating>
+            </player>
+            <player>
+                <rank>7</rank>
+                <name>Usman KHAWAJA</name>
+                <rating>765</rating>
+            </player>
+            <player>
+                <rank>10</rank>
+                <name>Marnus LABUSCHAGNE</name>
+                <rating>746</rating>
+            </player>
+        </country>
+        <country name="Pakistan">
+            <player>
+                <rank>6</rank>
+                <name>Babar AZAM</name>
+                <rating>768</rating>
+            </player>
+        </country>
+        <country name="England">
+            <player>
+                <rank>4</rank>
+                <name>Joe ROOT</name>
+                <rating>797</rating>
+            </player>
+            <player>
+                <rank>9</rank>
+                <name>Harry BROOK</name>
+                <rating>758</rating>
+            </player>
+        </country>
+        <country name="New Zealand">
+            <player>
+                <rank>2</rank>
+                <name>Kane WILLIAMSON</name>
+                <rating>883</rating>
+            </player>
+            <player>
+                <rank>5</rank>
+                <name>Daryl MITCHELL</name>
+                <rating>788</rating>
+            </player>
+        </country>
+        <country name="Sri Lanka">
+            <player>
+                <rank>8</rank>
+                <name>Dimuth KARUNARATNE</name>
+                <rating>750</rating>
+            </player>
+        </country>
+    </mensTestbatter>
+    <mensODIbatter>
+        <country name="India">
+            <player>
+                <rank>1</rank>
+                <name>Virat KOHLI</name>
+                <rating>901</rating>
+            </player>
+            <player>
+                <rank>4</rank>
+                <name>Rohit SHARMA</name>
+                <rating>746</rating>
+            </player>
+            <player>
+                <rank>3</rank>
+                <name>Shubman GILL</name>
+                <rating>801</rating>
+            </player>        
+        </country>
+        <country name="Australia">
+            <player>
+                <rank>6</rank>
+                <name>David WARNER</name>
+                <rating>723</rating>
+            </player>
+        </country>
+        <country name="New Zealand">
+            <player>
+                <rank>5</rank>
+                <name>Daryl MITCHELL</name>
+                <rating>728</rating>
+            </player>
+        </country>
+        <country name="South Africa">
+            <player>
+                <rank>9</rank>
+                <name>Rassie VAN DER DUSSEN</name>
+                <rating>701</rating>
+            </player>
+            <player>
+                <rank>10</rank>
+                <name>Heinrich KLASSEN</name>
+                <rating>697</rating>
+            </player>
+        </country>
+        <country name="Pakistan">
+            <player>
+                <rank>2</rank>
+                <name>Babar AZAM</name>
+                <rating>824</rating>
+            </player>
+        </country>
+        <country name="Ireland">
+            <player>
+                <rank>7</rank>
+                <name>Harry TECTOR</name>
+                <rating>723</rating>
+            </player>
+        </country>
+        <country name="England">
+            <player>
+                <rank>8</rank>
+                <name>David MALAN</name>
+                <rating>707</rating>
+            </player>
+        </country>
+    </mensODIbatter>
+    <mensT20batter>
+        <country name="India">
+            <player>
+                <rank>1</rank>
+                <name>Virat KOHLI</name>
+                <rating>890</rating>
+            </player>
+            <player>
+                <rank>2</rank>
+                <name>Suryakumar YADAV</name>
+                <rating>861</rating>
+            </player>
+            <player>
+                <rank>7</rank>
+                <name>Yashasvi JAISWAL</name>
+                <rating>714</rating>
+            </player>
+        </country>
+        <country name="England">
+            <player>
+                <rank>3</rank>
+                <name>Philip SALT</name>
+                <rating>802</rating>
+            </player>
+            <player>
+                <rank>10</rank>
+                <name>Jos BUTTLER</name>
+                <rating>680</rating>
+            </player>
+        </country>
+        <country name="Pakistan">
+            <player>
+                <rank>4</rank>
+                <name>Mohammad RIZWAN</name>
+                <rating>800</rating>
+            </player>
+            <player>
+                <rank>5</rank>
+                <name>Babar AZAM</name>
+                <rating>764</rating>
+            </player>
+        </country>
+        <country name="South Africa">
+            <player>
+                <rank>6</rank>
+                <name>Aiden MARKRAM</name>
+                <rating>755</rating>
+            </player>
+            <player>
+                <rank>9</rank>
+                <name>Rilee ROSSOUW</name>
+                <rating>689</rating>
+            </player>
+        </country>
+        <country name="New Zealand">
+            <player>
+                <rank>8</rank>
+                <name>Finn ALLEN</name>
+                <rating>706</rating>
+            </player>
+        </country>
+    </mensT20batter>
+</cricketRankings>
