@@ -1,1 +1,1 @@
-# cricxpert
+# CricXpert is a dynamic website providing real-time cricket updates and essential. It was my first full-stack web development project, where I designed responsive layouts using HTML and CSS, implemented client-side interactivity with JavaScript, and integrated server-side functionality using PHP and MySQL. This project laid the groundwork for my expertise in both front-end and back-end web development.
